@@ -58,11 +58,32 @@
   --card-bg: rgba(13, 13, 13, 0.3);
 }
 
+
+[data-theme='dark'] #post blockquote {
+  background-color: #55555588;
+}
+
+[data-theme='dark'] .post {
+  --card-bg: rgba(13, 13, 13, 0.3);
+}
+
 [data-theme='dark'] #footer {
   background-color: rgba(13, 13, 13, 0.8);
 }
 
 [data-theme='light'] .page {
+  --card-bg: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme='light'] #post blockquote {
+  background-color: #7ec8e388;
+}
+
+[data-theme='light'] .post-copyright a{
+  color: #555;
+}
+
+[data-theme='light'] .post {
   --card-bg: rgba(255, 255, 255, 0.3);
 }
 
