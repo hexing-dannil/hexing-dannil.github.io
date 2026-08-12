@@ -1,0 +1,100 @@
+/* ================= 分类标签样式（胶囊） ================= */
+.card-category-list-link {
+  display: inline-flex !important;
+  align-items: center;
+  transition: scale 0.3s ease;
+  padding: 2px 12px !important;
+  margin: 4px 4px !important;
+  border-radius: 20px !important;
+  /* 圆角加大，更像胶囊 */
+  font-size: 13px;
+
+  backface-visibility: hidden;
+}
+
+
+[data-theme="dark"] .card-category-list-link {
+  background-color: #2a2a36 !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  color: #fff;
+}
+
+[data-theme="light"] .card-category-list-link {
+  background-color: #ccc !important;
+  color: #000;
+}
+
+.card-category-list-name {
+  margin-right: 2px;
+  transition: color .3s;
+}
+
+.card-category-list-count {
+  font-size: 12px;
+  padding: 0 5px;
+  border-radius: 50%;
+}
+
+.card-category-list-link:hover {
+  transform: scale(1.05);
+}
+
+[data-theme='dark'] .card-category-list-link:hover {
+  color: #7ec8e3 !important;
+}
+
+[data-theme='light'] .card-category-list-link:hover {
+  background-color: #888 !important;
+}
+
+
+/* ================= 网页的颜色设置 ================= */
+.recent-post-item,
+.card-widget {
+  backdrop-filter: blur(30px);
+}
+
+[data-theme='dark'] .page {
+  --card-bg: rgba(13, 13, 13, 0.3);
+}
+
+[data-theme='dark'] #footer {
+  background-color: rgba(13, 13, 13, 0.8);
+}
+
+[data-theme='light'] .page {
+  --card-bg: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme='light'] .content time,
+.card-tag-cloud a {
+  color: #666 !important;
+}
+
+[data-theme='light'] #footer {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='light'] .footer-copyright {
+  color: #000 !important;
+}
+
+[data-theme='light'] .footer-copyright a {
+  color: #777 !important;
+  transition: color .1s !important;
+}
+
+[data-theme='light'] .footer-copyright a:hover {
+  color: #000 !important;
+  text-decoration: underline;
+}
+
+/* ================= 特效设置 ================= */
+.recent-post-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+}
+
+.recent-post-item:hover .article-title {
+  color: #49b1f5 !important;
+}
