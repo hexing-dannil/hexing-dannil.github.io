@@ -1,4 +1,6 @@
 /* ================= 分类标签样式（胶囊） ================= */
+
+/* 公共分类 */
 .card-category-list-link {
   display: inline-flex !important;
   align-items: center;
@@ -12,13 +14,14 @@
   backface-visibility: hidden;
 }
 
-
+/* 暗色分类 */
 [data-theme="dark"] .card-category-list-link {
   background-color: #2a2a36 !important;
   border: 1px solid rgba(255, 255, 255, 0.04) !important;
   color: #fff;
 }
 
+/* 亮色分类 */
 [data-theme="light"] .card-category-list-link {
   background-color: #ccc !important;
   color: #000;
