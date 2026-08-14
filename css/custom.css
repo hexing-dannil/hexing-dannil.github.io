@@ -27,17 +27,20 @@
   color: #000;
 }
 
+/* 类名 */
 .card-category-list-name {
   margin-right: 2px;
   transition: color .3s;
 }
 
+/* 数量 */
 .card-category-list-count {
   font-size: 12px;
   padding: 0 5px;
   border-radius: 50%;
 }
 
+/* 胶囊特效 */
 .card-category-list-link:hover {
   transform: scale(1.05);
 }
@@ -61,6 +64,33 @@
   --card-bg: rgba(13, 13, 13, 0.3);
 }
 
+[data-theme='dark'] #post .cover {
+  background: linear-gradient(to left, #3f9cff, #01c8ff) !important;
+}
+
+[data-theme='dark'] #post .icon-x {
+  border-color: #fff;
+  color: #fff;
+}
+
+[data-theme='dark'] #post .icon-x:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+[data-theme='light'] #post .icon-wechat {
+  border-color: #5aba1a;
+  color: #5aba1a;
+}
+
+[data-theme='light'] #post .icon-wechat:hover {
+  background-color: #5aba1a;
+  color: #fff;
+}
+
+[data-theme='light'] #post .cover {
+  background: linear-gradient(to left, #29dfff, #1acdff) !important;
+}
 
 [data-theme='dark'] #post blockquote {
   background-color: #55555588;
@@ -82,12 +112,12 @@
   background-color: #7ec8e388;
 }
 
-[data-theme='light'] .post-copyright a{
+[data-theme='light'] .post-copyright a {
   color: #555;
 }
 
 [data-theme='light'] .post {
-  --card-bg: rgba(255, 255, 255, 0.3);
+  --card-bg: rgba(255, 255, 255, 0.7);
 }
 
 [data-theme='light'] .content time,
@@ -121,4 +151,70 @@
 
 .recent-post-item:hover .article-title {
   color: #49b1f5 !important;
+}
+
+/* 文章页H1-H6图标样式效果 */
+#post h1::before,
+#post h2::before,
+#post h3::before,
+#post h4::before,
+#post h5::before,
+#post h6::before {
+  -webkit-animation: ccc 1.6s linear infinite;
+  animation: ccc 1.6s linear infinite;
+}
+
+@-webkit-keyframes ccc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn)
+  }
+}
+
+@keyframes ccc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn)
+  }
+}
+
+#content-inner.layout h1::before {
+    color: #ef50a8 ;
+    font-size: 1.3rem;
+    margin-top: -0.23rem;
+}
+#content-inner.layout h2::before {
+    color: #fb7061 ;
+    font-size: 1.1rem;
+    margin-top: -0.12rem;
+}
+#content-inner.layout h3::before {
+    color: #ffbf00 ;
+    font-size: 0.95rem;
+    margin-top: -0.09rem;
+}
+#content-inner.layout h4::before {
+    color: #a9e000 ;
+    font-size: 0.8rem;
+    margin-top: -0.09rem;
+}
+#content-inner.layout h5::before {
+    color: #57c850 ;
+    font-size: 0.7rem;
+    margin-top: 0.0rem;
+}
+#content-inner.layout h6::before {
+    color: #5ec1e0 ;
+    font-size: 0.66rem;
+    margin-top: 0.0rem;
 }
