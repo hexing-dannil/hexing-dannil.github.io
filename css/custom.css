@@ -218,3 +218,33 @@
     font-size: 0.66rem;
     margin-top: 0.0rem;
 }
+
+[data-theme='dark'] #post del {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: transparent;
+
+  transition: color .3s, background-color .3s;
+}
+
+[data-theme='dark'] #post del:hover {
+  text-decoration: none;
+  color: white;
+  background-color: var(--card-bg);
+}
+
+[data-theme='light'] #post del {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: black;
+  color: transparent;
+
+  transition: color .3s, background-color .3s;
+}
+
+[data-theme='light'] #post del:hover {
+  text-decoration: none;
+  color: black;
+  background-color: var(--card-bg);
+}
