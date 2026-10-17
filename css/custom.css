@@ -18,70 +18,19 @@
 }
 
 
-/* ================= 分类标签样式（胶囊） ================= */
-
-/* 公共分类 */
-.card-category-list-link {
-  display: inline-flex !important;
-  align-items: center;
-  transition: scale 0.3s ease;
-  padding: 2px 12px !important;
-  margin: 4px 4px !important;
-  border-radius: 20px !important;
-  /* 圆角加大，更像胶囊 */
-  font-size: 13px;
-
-  backface-visibility: hidden;
-}
-
-/* 暗色分类 */
-[data-theme="dark"] .card-category-list-link {
-  background-color: #2a2a36 !important;
-  border: 1px solid rgba(255, 255, 255, 0.04) !important;
-  color: #fff;
-}
-
-/* 亮色分类 */
-[data-theme="light"] .card-category-list-link {
-  background-color: #ccc !important;
-  color: #000;
-}
-
-/* 类名 */
-.card-category-list-name {
-  margin-right: 2px;
-  transition: color .3s;
-}
-
-/* 数量 */
-.card-category-list-count {
-  font-size: 12px;
-  padding: 0 5px;
-  border-radius: 50%;
-}
-
-/* 胶囊特效 */
-.card-category-list-link:hover {
-  transform: scale(1.05);
-}
-
-[data-theme='dark'] .card-category-list-link:hover {
-  color: #7ec8e3 !important;
-}
-
-[data-theme='light'] .card-category-list-link:hover {
-  background-color: #888 !important;
-}
-
-
 /* ================= 网页的颜色设置 ================= */
-.recent-post-item,
-.card-widget {
-  backdrop-filter: blur(30px);
+/* 配色：近黑冷灰底 + 墨绿/青（teal）强调色。
+   卡片一律实色，不做毛玻璃。想换主色只改下面几个变量就行。 */
+[data-theme='dark'] {
+  --global-bg: #0f1115;
+  --card-bg: #171a1f;
+  --card-border: rgba(255, 255, 255, 0.06);
 }
 
-[data-theme='dark'] .page {
-  --card-bg: rgba(13, 13, 13, 0.3);
+[data-theme='light'] {
+  --global-bg: #ffffff;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.07);
 }
 
 [data-theme='dark'] #post .cover {
@@ -113,31 +62,19 @@
 }
 
 [data-theme='dark'] #post blockquote {
-  background-color: #55555588;
-}
-
-[data-theme='dark'] .post {
-  --card-bg: rgba(13, 13, 13, 0.3);
+  background-color: #1d2127;
 }
 
 [data-theme='dark'] #footer {
-  background-color: rgba(13, 13, 13, 0.8);
-}
-
-[data-theme='light'] .page {
-  --card-bg: rgba(255, 255, 255, 0.3);
+  background-color: #12151a;
 }
 
 [data-theme='light'] #post blockquote {
-  background-color: #7ec8e388;
+  background-color: #eaf6f4;
 }
 
 [data-theme='light'] .post-copyright a {
   color: #555;
-}
-
-[data-theme='light'] .post {
-  --card-bg: rgba(255, 255, 255, 0.7);
 }
 
 [data-theme='light'] .content time,
@@ -146,7 +83,7 @@
 }
 
 [data-theme='light'] #footer {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #f6f7f9;
 }
 
 [data-theme='light'] .footer-copyright {
@@ -163,10 +100,23 @@
   text-decoration: underline;
 }
 
+/* 卡片：实色 + 一道细描边 + 很浅的投影，扁平，不做任何毛玻璃 */
+[data-theme='dark'] .recent-post-item,
+[data-theme='dark'] .card-widget {
+  border: 1px solid var(--card-border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme='light'] .recent-post-item,
+[data-theme='light'] .card-widget {
+  border: 1px solid var(--card-border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
 /* ================= 特效设置 ================= */
 .recent-post-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
 }
 
 .recent-post-item:hover .article-title {
@@ -327,21 +277,21 @@
   }
 }
 
-/* 右栏卡片：主题只给 #aside-content 里的卡片加样式，这里补齐 */
+/* 右栏卡片：主题只给 #aside-content 里的卡片加样式，这里补齐。
+   注意用 background-color，别用 background 简写，否则会把上面的玻璃高光盖掉 */
 #aside-right .card-widget {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
   padding: 20px 24px;
   border-radius: 8px;
-  background: var(--card-bg);
-  box-shadow: var(--card-box-shadow, 0 4px 8px 6px rgba(7, 17, 27, .06));
+  background-color: var(--card-bg);
+  box-shadow: var(--card-box-shadow, 0 2px 10px rgba(0, 0, 0, 0.3));
   transition: all .3s;
-  backdrop-filter: blur(30px);
 }
 
 #aside-right .card-widget:hover {
-  box-shadow: var(--card-hover-box-shadow, 0 4px 8px 6px rgba(7, 17, 27, .06));
+  box-shadow: var(--card-hover-box-shadow, 0 4px 14px rgba(0, 0, 0, 0.35));
 }
 
 /* 移动端：三栏退回纵向堆叠 */
@@ -432,4 +382,12 @@
     box-sizing: border-box !important;
     overflow: hidden;
   }
+}
+
+/* ================= 右下角按钮常开 ================= */
+/* 主题默认要滚到一定位置才给 #rightside 加 .rightside-show，
+   这里直接把「显示状态」的透明度和位移写死，一进页面就在右下角。 */
+#rightside {
+  opacity: 0.8;
+  transform: translate(-58px, 0);
 }

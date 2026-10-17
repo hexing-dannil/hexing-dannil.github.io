@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Re：从零开始的 互联网 生活（雾）</title>
+    <url>/2026/08/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>这是我第一次试着做博客。</p>
+<p>其实我在网上搜了很多教程，经过一顿猛如虎的操作，才好不容易把网页搭好（如果你现在看到了这个页面，说明我的网站总算是成功上线了）。</p>
+<p>至于为什么想折腾这个，实际上是别人提议的：“<strong>做一个自己专属的博客呗，越早越好</strong>”。</p>
+<p>说实话，在他提议之前，我还不知道博客具体是啥</p>
+<blockquote>
+<p>“<strong>不就是微博嘛，等我在微博注册一个账号</strong>”<br>“<strong>是这样的吗？</strong>”<br>“<strong>哈？难道不是吗？</strong>”(傻)<br>“<strong>是吗？</strong>”</p>
+</blockquote>
+<p>谁能想到，原来是亲手从头搭建一个属于自己的个人博客？！搞得我像从没上过网一样（元谋人），见得太少了（</p>
+<p>目前这个网页还在开发中，很多想要的功能还没写完，界面也还比较粗糙，不够美观。不过没关系，慢慢写呗，就先这样子吧。</p>
+]]></content>
+      <categories>
+        <category>琐事</category>
+      </categories>
+      <tags>
+        <tag>成长记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AI大时代中AI的重要作用</title>
+    <url>/2026/08/17/AI%E5%A4%A7%E6%97%B6%E4%BB%A3%E4%B8%ADAI%E7%9A%84%E9%87%8D%E8%A6%81%E4%BD%9C%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="AI无处不在"><a href="#AI无处不在" class="headerlink" title="AI无处不在"></a>AI无处不在</h2><p>当我们在抖音、快手等短视频平台上刷着喜欢的视频时，是否曾好奇：为什么平台总能精准猜到我们的喜好？甚至有时只是随口说了一句话，平台就像能<strong>监听</strong>到一样（对此感兴趣的朋友可以查看大佬的讲解：<a href="https://mp.weixin.qq.com/s/fR_GTcbEg84GOcQ5XXcyCw">为什么你刚搜的东西，其他App转头就知道了？</a>，这里我们只讨论<strong>AI</strong>相关的部分）。这背后，其实正是<strong>AI</strong>在发挥作用。</p>
+<p>与此同时，游戏里的<strong>人机</strong>对战、各类软件中集成的AI助手——<strong>微信</strong>里的<strong>小微AI</strong>、<strong>美团</strong>里的<strong>小团AI</strong>，以及你手机里的<strong>语音助手</strong>、能自动<strong>按人脸整理照片</strong>的相册、能<strong>预测拥堵并规划路线</strong>的地图、总<strong>推荐你最近想买的东西</strong>的购物软件——这些背后，都是AI。它们都在告诉我们：AI已经渗透到日常生活的各个角落，变得无处不在。但……</p>
+<h2 id="AI到底是什么呢？"><a href="#AI到底是什么呢？" class="headerlink" title="AI到底是什么呢？"></a>AI到底是什么呢？</h2><p>你或许会问：平台的<strong>推流机制</strong>是AI，游戏里的<strong>人机</strong>也是AI，DeepSeek、ChatGPT、豆包这些聊天机器人还是AI。这几个看起来八竿子打不着的东西，居然都被称为AI，那AI究竟是什么呢？</p>
+<blockquote>
+<p><strong>人工智能（Artificial Intelligence，AI）</strong> 是研究、开发用于模拟和延伸人类智能的理论方法与技术体系的一门学科。（来源：<a href="https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/58131596">百度百科</a>）</p>
+</blockquote>
+<p>根据这一定义，<strong>AI的核心是“模拟和延伸人类智能”</strong>。关键在于“模拟”二字——不同场景下的AI，只是用不同的技术手段去模拟人类智能的<strong>不同侧面</strong>。这样一来，上面的疑问就不难解释了：</p>
+<ul>
+<li><p><strong>平台的推流机制</strong>：模拟的是“人类判断偏好”的能力。它通过算法分析你的行为数据（如点赞、停留时长、完播率等），在毫秒级的时间内，从海量视频中筛选出“你最有可能喜欢”的那一个推送给你。它并不“理解”视频内容，而是在“计算”你的喜好概率。</p>
+</li>
+<li><p><strong>游戏里的人机（NPC&#x2F;Bot）</strong>：模拟的是“人类玩家做出决策”的能力。它依靠预设的行为树和寻路算法，实时感知你的位置和状态，并做出追击、躲避、攻击等反应。它不会“学习”你的策略，只是在“执行”程序员事先写好的规则。</p>
+</li>
+</ul>
+<p>顺着这个思路，我们还可以进一步反推：<strong>只要一套理论、方法或技术体系能够“模拟和延伸”人类智能，它就是AI</strong>（当然，目前我们接触到的AI，基本都属于“弱人工智能”，只在特定领域模拟人类智能；像电影里那种有自我意识、能独立思考的“强人工智能”，目前还不存在）。那么，视频平台上的<strong>热搜</strong>，是不是也在模拟人类智能呢？答案是肯定的——它模拟的是“社会群体注意力汇聚”的能力，通过算法捕捉全网的关注焦点，并实时呈现出来。</p>
+<p><img src="/images/AI%E5%A4%A7%E6%97%B6%E4%BB%A3%E4%B8%ADAI%E7%9A%84%E9%87%8D%E8%A6%81%E4%BD%9C%E7%94%A8/%E7%83%AD%E6%90%9C.png" alt="bilibili热搜图片"></p>
+<p>一旦我们用这种方式去理解AI，就会发现：<strong>AI，真的无处不在。</strong></p>
+<h2 id="AI的作用"><a href="#AI的作用" class="headerlink" title="AI的作用"></a>AI的作用</h2><h3 id="1-效率放大器"><a href="#1-效率放大器" class="headerlink" title="1. 效率放大器"></a>1. 效率放大器</h3><p>AI把那些本来需要我们花费<strong>大量时间、精力去做的重复性工作</strong>，变成了几秒钟就能完成的事，避免了不必要的时间消耗。就比如我在写这篇文章时，就通过使用AI来润色句子，省去了很多检查的时间。<del>这里多亏了D老师了</del></p>
+<h3 id="2-能力平权者"><a href="#2-能力平权者" class="headerlink" title="2. 能力平权者"></a>2. 能力平权者</h3><p>过去要有专业技术才能做的事，现在普通人借助AI也能完成。很多人虽然不会编程，但也可以通过AI自己开发游戏。被老板要求使用一项新技术时，也可以让AI当导师，边问边学，快速上手。</p>
+<p><img src="/images/AI%E5%A4%A7%E6%97%B6%E4%BB%A3%E4%B8%ADAI%E7%9A%84%E9%87%8D%E8%A6%81%E4%BD%9C%E7%94%A8/AI%E4%BD%9C%E7%94%A82.png" alt="不会编程做游戏图片"></p>
+<h3 id="3-灵感催化剂"><a href="#3-灵感催化剂" class="headerlink" title="3. 灵感催化剂"></a>3. 灵感催化剂</h3><p>在我们使用AI时，它不只是按要求输出，有时也会反过来追问我们。比如我让AI生成一篇800字作文时，它没有直接动笔，而是先问我想写什么主题。这个追问本身，就帮我理清了自己模糊的想法——这其实就是AI在“触发”我的思路。</p>
+<p><img src="/images/AI%E5%A4%A7%E6%97%B6%E4%BB%A3%E4%B8%ADAI%E7%9A%84%E9%87%8D%E8%A6%81%E4%BD%9C%E7%94%A8/AI%E4%BD%9C%E7%94%A83.png" alt="要求AI生成800字作文图片"></p>
+<p>这三件事本质上都是AI在<strong>辅助</strong>我们。程序员写代码时也可以借助AI辅助，但当AI不能直接帮我们解决问题时，我们就要使用Agent了。</p>
+<hr>
+<h2 id="Agent又是什么？"><a href="#Agent又是什么？" class="headerlink" title="Agent又是什么？"></a>Agent又是什么？</h2><p>Agent的本义是“（企业、政治等的）<strong>代理人</strong>、<strong>经纪人</strong>”。结合这个含义，以及我们前面学过的“AI到底是什么呢？”，就会发现Agent也是AI的一种，因为它模拟了人类“代理&#x2F;执行项目”的能力。</p>
+<blockquote>
+<p>AI Agent（人工智能代理）是一种能够感知环境、自主决策并执行动作的智能实体。与传统AI系统不同，Agent不仅能回答问题，还能主动完成一系列复杂任务。</p>
+<p>简单来说，如果把大语言模型（LLM）比作一个“超级大脑”，那么AI Agent就是给这个大脑装上了“手脚”和“工具”，让它能够像人类一样主动行动，而不仅仅是被动回答问题。来自<a href="https://blog.csdn.net/l01011_/article/details/146495533">大模型研究院</a></p>
+</blockquote>
+<p>通过以上资料我们可以知道，Agent是AI的升级版：在具备AI原有能力的基础上，还可以操控我们的电脑，直接创建、修改和删除文件；在思考模式上也有所不同。</p>
+<p><img src="/images/AI%E5%A4%A7%E6%97%B6%E4%BB%A3%E4%B8%ADAI%E7%9A%84%E9%87%8D%E8%A6%81%E4%BD%9C%E7%94%A8/AI%E6%80%9D%E8%80%83%E8%BF%87%E7%A8%8B.png" alt="AI思考过程图片"></p>
+<p>举个最近的例子，<strong>Manus</strong>就是一个典型Agent。你给它一叠简历压缩包，它<strong>能自动解压、逐份阅读、提取关键信息、生成排名表格，最后把结果发给你</strong>。这个过程不需要你一步步教。</p>
+<h2 id="Agent的作用"><a href="#Agent的作用" class="headerlink" title="Agent的作用"></a>Agent的作用</h2><h3 id="1-解放人力：让Agent操控电脑"><a href="#1-解放人力：让Agent操控电脑" class="headerlink" title="1. 解放人力：让Agent操控电脑"></a>1. 解放人力：让Agent操控电脑</h3><p>AI能告诉我们“怎么做”，但Agent能“替我们做”。比如让AI帮你整理一份Excel表格，AI只能告诉你步骤；但Agent可以直接读取表格、归类、排序、生成新文件，然后把结果交到你手上。只需要说“帮我整理一下”，剩下的全是Agent的事。</p>
+<h3 id="2-规模化执行：执行多任务管理"><a href="#2-规模化执行：执行多任务管理" class="headerlink" title="2. 规模化执行：执行多任务管理"></a>2. 规模化执行：执行多任务管理</h3><p>使用Agent时，我们可以同时调用多个Agent并行处理多个任务：让一个Agent写周报、另一个Agent查资料、第三个Agent整理数据，它们各干各的，互不干扰，最后统一把结果汇总给你<del>（属于是提前过上当老板的生活）</del>。</p>
+<h3 id="3-跨场景协作：Agent之间可以“对话”"><a href="#3-跨场景协作：Agent之间可以“对话”" class="headerlink" title="3. 跨场景协作：Agent之间可以“对话”"></a>3. 跨场景协作：Agent之间可以“对话”</h3><p>单个Agent能完成任务，多个Agent还能配合工作。比如写一份行业分析报告：一个Agent负责查数据，一个Agent负责写正文，一个Agent负责做图表，一个Agent负责校对格式。它们之间可以互相传递信息、确认进度，最后协同完成一份完整报告——<strong>全程不需要你插手。这就是“多Agent系统”。</strong></p>
+<p>看到Agent能直接操控电脑、修改文件，大家是不是在为它的高效欢呼时，心里也偷偷“咯噔”了一下——<strong>万一它自作主张，删错了文件怎么办？</strong> 这种担忧并非杞人忧天，它恰恰触及了我们今天要聊的另一面：<strong>AI和Agent，并不是完美无瑕的。</strong></p>
+<h2 id="AI与Agent的缺点"><a href="#AI与Agent的缺点" class="headerlink" title="AI与Agent的缺点"></a>AI与Agent的缺点</h2><ul>
+<li><p><strong>AI：</strong></p>
+<ol>
+<li><strong>一本正经地胡说</strong>：AI遇到<strong>不知道的知识</strong>时，不会说“我不知道”，而是捏造一个假数据、假文献，让你信以为真。如果不加核实，那只能自认倒霉。不过，这一点可以通过优化提示词来尽量避免。</li>
+<li><strong>消息不能实时获取</strong>：这一点我深有体会。在编程时，AI经常给我已经被删除的函数让我使用。这种情况即使我写了提示词，也不能完全避免。</li>
+</ol>
+</li>
+<li><p><strong>Agent：</strong></p>
+<ol>
+<li><strong>一本正经地胡说</strong>（同上）</li>
+<li><strong>不可预知的危险</strong>：Agent在帮我们删除文件时，可能因为指令不明确，误删某些重要文件。</li>
+<li><strong>成本高</strong>：每调用一次大模型都要花钱。一个Agent每天处理1000次对话，API费用可能上百元。而使用免费Agent，又可能面临AI能力不足、表现很“傻”的情况。</li>
+</ol>
+</li>
+</ul>
+<p>综上所述，AI是工具，不是魔法。它能放大你的能力，也能放大你的错误。</p>
+<blockquote>
+<p>正视它的缺陷，不是为了否定它的价值，而是为了<strong>安全地驾驭它</strong>。</p>
+<p>AI像一把锋利的瑞士军刀，Agent则像一把复杂的工具钳。<strong>不懂规矩的人拿来乱挥，容易伤到自己；懂行的人知道它的刀刃在哪、防滑层在哪，才能用它雕刻出最好的作品。</strong></p>
+<p>所以，使用AI时不妨记住三条：重要信息必须核实，关键决策必须人工复核，给Agent的权限必须设限。这样，AI才能真正成为你的助手，而不是隐患。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>Agent</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>v0.1.0 版本更新</title>
+    <url>/2026/08/12/update-log/v0.1.0/</url>
+    <content><![CDATA[<h2 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h2><blockquote>
+<p> 这可以算是我第一次的更新了，刚搭建网页就发现了各种的问题，所以我想以后肯定会有更多、更复杂的bug和问题，所以为此我写了一个更新日志用来记录自己的更新情况，可以更好的规整</p>
+</blockquote>
+<h2 id="新改动"><a href="#新改动" class="headerlink" title="新改动"></a>新改动</h2><ol>
+<li>在顶部导向栏里更新了 <strong>更多</strong>，同时又更新了 <strong>更新日志</strong> <del>（我不更你看啥）</del>，把 <strong>关于</strong> 移到了 <strong>更多</strong> 下</li>
+<li>在顶部导向里更新了 <strong>标签</strong> 和 <strong>分类</strong></li>
+<li>为首页和文章的<strong>卡片</strong>加了透明和<strong>毛玻璃</strong>效果</li>
+<li>为文章中的所有标题前面加上了<strong>小风扇</strong></li>
+<li><del>移除了 herobrine</del></li>
+</ol>
+<h2 id="修复"><a href="#修复" class="headerlink" title="修复"></a>修复</h2><ol>
+<li>修复了文章卡片不是透明的bug</li>
+<li>修复了在亮色模式时链接部分颜色太浅看不清的bug</li>
+<li>修复了文章链接还是 localhost: 的bug</li>
+</ol>
+]]></content>
+      <categories>
+        <category>更新日志</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>v1.0.0 版本更新</title>
+    <url>/2026/08/14/update-log/v1.0.0/</url>
+    <content><![CDATA[<h2 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h2><blockquote>
+<p>这次更新完后，就好像没什么可以改的了，我可能就开始正式发文章了，同时会把个人信息等写一下，敬请期待吧</p>
+</blockquote>
+<h2 id="新改动"><a href="#新改动" class="headerlink" title="新改动"></a>新改动</h2><ol>
+<li>为小风车添加了<strong>旋转</strong>效果，并为 h1 至 h6 提供了颜色不同的小风车</li>
+<li>为部分选项修改了颜色，并修改了透明度</li>
+<li>相信你也看到了，是的，我给文章上面那里加了<strong>背景</strong>（喜），就连下面的翻页卡也有背景，总共有六个，自己去找找看去吧</li>
+<li>在首页中的个人简介卡片的<strong>前往github</strong>按钮下面添加了我的链接github（虽然多此一举了）和我的邮箱地址，如果有什么bug或者网页处理不佳请发邮箱给我，我会尽力改的，以后会有更多的平台的</li>
+</ol>
+<h2 id="修复"><a href="#修复" class="headerlink" title="修复"></a>修复</h2><ol>
+<li>还是某些选项卡会与背景重叠看不清</li>
+</ol>
+]]></content>
+      <categories>
+        <category>更新日志</category>
+      </categories>
+  </entry>
+</search>
