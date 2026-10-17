@@ -1,3 +1,23 @@
+/* ================= 本地字体 ================= */
+/* JetBrains Mono，文件在 source/fonts/，不依赖任何外部 CDN。
+   font-display: swap 保证字体没下载完时先用 fallback，不阻塞首屏渲染 */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* ================= 分类标签样式（胶囊） ================= */
 
 /* 公共分类 */
@@ -247,4 +267,169 @@
   text-decoration: none;
   color: black;
   background-color: var(--card-bg);
+}
+
+
+/* ================= 暗色模式图标可见性修复 ================= */
+
+/* GitHub 品牌色 #24292e 接近纯黑，在暗色卡片上几乎看不见。
+   主题模板把它渲染成 inline style（style="color:#24292e"），
+   普通选择器压不住，必须 !important。
+   亮色模式保持原色不动，只处理暗色。 */
+[data-theme='dark'] .social-icon .fa-github {
+  color: #e8e8e8 !important;
+  transition: color .3s, transform .3s;
+}
+
+[data-theme='dark'] .social-icon .fa-github:hover {
+  color: #ffffff !important;
+}
+
+/* Email 图标（#4a7dbe）在暗色下对比度也偏低，顺手提亮一档 */
+[data-theme='dark'] .social-icon .fa-envelope {
+  color: #7fb3e8 !important;
+  transition: color .3s;
+}
+
+[data-theme='dark'] .social-icon .fa-envelope:hover {
+  color: #a8ccf5 !important;
+}
+
+
+/* ================= 三栏布局：左栏 + 正文 + 右栏 ================= */
+
+/* DOM 顺序保持「正文 → 左栏 → 右栏」，只用 order 调视觉顺序，
+   这样正文仍是 .layout 的 first-child，主题给它的卡片样式不会丢。 */
+@media screen and (min-width: 900px) {
+  #content-inner.layout {
+    align-items: flex-start;
+  }
+
+  /* 左栏（沿用 #aside-content） */
+  #content-inner.layout > #aside-content {
+    width: 21% !important;
+    order: 1;
+    padding: 0 12px 0 0 !important;
+    align-self: flex-start;
+  }
+
+  /* 正文 */
+  #content-inner.layout > div:first-child {
+    width: 58% !important;
+  }
+
+  /* 右栏 */
+  #content-inner.layout > #aside-right {
+    width: 21% !important;
+    order: 3;
+    padding: 0 0 0 12px !important;
+    align-self: flex-start;
+  }
+}
+
+/* 右栏卡片：主题只给 #aside-content 里的卡片加样式，这里补齐 */
+#aside-right .card-widget {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 20px 24px;
+  border-radius: 8px;
+  background: var(--card-bg);
+  box-shadow: var(--card-box-shadow, 0 4px 8px 6px rgba(7, 17, 27, .06));
+  transition: all .3s;
+  backdrop-filter: blur(30px);
+}
+
+#aside-right .card-widget:hover {
+  box-shadow: var(--card-hover-box-shadow, 0 4px 8px 6px rgba(7, 17, 27, .06));
+}
+
+/* 移动端：三栏退回纵向堆叠 */
+@media screen and (max-width: 900px) {
+  /* flex item 默认 min-width:auto，内容里的长元素（标签、长链接、代码）
+     会把它撑破容器，导致整页横向溢出。必须显式允许收缩。 */
+  #content-inner.layout > div:first-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  #content-inner.layout {
+    flex-direction: column;
+  }
+
+  /* 移动端顺序：正文 → 左栏卡片 → 右栏卡片，全部堆到正文下面 */
+  #content-inner.layout > div:first-child {
+    order: 1;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  #content-inner.layout > #aside-content {
+    order: 2;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+
+  #content-inner.layout > #aside-right {
+    order: 3;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+
+  /* 卡片本身也不许超出容器 */
+  #recent-posts .recent-post-item,
+  #aside-right .card-widget,
+  #aside-content .card-widget {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* 文章卡片的 meta 行（发表时间 / 分类 / 标签）是一串 inline span，
+     窄屏不换行会把卡片撑破，导致整页横向溢出 */
+  #recent-posts .recent-post-info,
+  #recent-posts .article-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  #recent-posts .article-meta-wrap {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* 兜底：万一还有别的元素撑宽，裁掉横向滚动而不是让它溢出 */
+  html {
+    overflow-x: clip;
+  }
+
+  /* #recent-posts 不一定是 .layout 的 first-child，
+     主题的 padding 可能没落在它身上，这里显式约束宽度 */
+  #recent-posts {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  #recent-posts .recent-post-item {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden;
+  }
 }
